@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>span and div</title>
+    <title>span, div, iFrames, forms, and meta tags</title>
+    <!-- Meta tags tells what the browser is all about. -->
+    <meta name="description" content="This page is about span, div, iframe, form, and meta tags.">
+    <meta name="keywords" content="HTML, span, div, meta tags, iframes, form">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser refresh rate -->
+    <meta http-equiv="refresh" content="30">
 </head>
 <body background-color="white">
     <p>
@@ -13,7 +20,7 @@
     <div style="background-color: grey;">
         lorem ipsum dolor sit amet consectetur adipiscing elit
     <p>
-        <span style="red">lorem ipsum dolor</span> sit amet consectetur adipiscing elit
+        <span style="color: blue;">lorem ipsum dolor</span> sit amet consectetur adipiscing elit
     </p>
 
     <p>
@@ -21,10 +28,56 @@
     </p>
     </div>
 
-      <!-- Buttons -->
-    <br>
-    <a href="index.html" target="_self" title="This takes you back to the main page">
-         Back to Main Page
-    </a>
+    <!-- iFrame: used to embed another webpage within the current page -->
+    <iframe style="border:0" src="index.html" width="600" height="400" title="Example iFrame"></iframe>
+
+    <!-- Buttons -->
+    <div>
+        <a href="index.html" target="_self" title="This takes you to the index page">
+            <button style="background-color: pink; border: 1px solid #ccc; padding: 10px 20px; cursor: pointer;">
+                <b>Back to Main Page</b>
+            </button>
+        </a>
+    </div>
+   
+    <div>
+        <button onclick="toGoogle()" style="background-color: lightblue; border: 1px solid #ccc; padding: 10px 20px; cursor: pointer;">
+            <b>Google</b>
+        </button> 
+    </div>
+   
+    <!-- JavaScript function to redirect to Google -->
+    <script>
+        function toGoogle() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+
+    <form action="submit_form.php" method="post">
+    <!-- POST = SECURITY; GET = SEARCH/KEYWORDS-->
+        <br>
+    
+        <div>
+            <label for="nname">Nickname:</label>
+            <input type="text" id="nname" name="nname"><br><br>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com"><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+        </div>
+
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    
+    </form>
+
 </body>
 </html>
