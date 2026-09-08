@@ -1,0 +1,33 @@
+body{
+    background-color: #f1bac3;
+}
+
+h1{
+    color: #9764b4;
+}
+
+p{
+    color: #643b7c;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 10px;
+}
+
+#p2{
+    color: #d62486;
+    font-size: 15px;  
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    
+}
+
+button{
+    background-color: #9764b4;
+    font-size: 15.5px;
+    color:#f1bac3;
+    border: 1px solid #41165a;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
